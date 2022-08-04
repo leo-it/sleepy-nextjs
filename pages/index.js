@@ -6,8 +6,8 @@ import { Benefits } from "../src/modules/Benefits";
 import { DownLoadApp } from "../src/modules/DownLoadApp";
 import { Tracking } from "../src/modules/Tracking";
 import { UsersSay } from "../src/modules/UsersSay";
-import phoneOne from "../public/img/phoneOne.webp"
-import Head from 'next/head'
+import phoneOne from "../public/img/phoneOne.webp";
+import Head from "next/head";
 import { Footer } from "../src/modules/Footer";
 
 export default function Home() {
@@ -15,10 +15,14 @@ export default function Home() {
     <>
       <Head>
         <title>sleepy</title>
-        <meta property="og:title" content="sleepy is a page for people who do not sleep normally and provides modern and technological solutions" key="sleepy" />
+        <meta
+          property="og:title"
+          content="sleepy is a page for people who do not sleep normally and provides modern and technological solutions"
+          key="sleepy"
+        />
       </Head>
-    
-      {/* <Navbar />
+
+      <Navbar />
       <DownLoadApp />
       <Benefits />
       <UsersSay />
@@ -46,11 +50,11 @@ export default function Home() {
           description="Sleep meditations are one of the most exciting new areas of Sleepiest; with titles such as 'Getting Back to Sleep' and 'Calm a Racing Mind', as well as meditation story hybrids such as 'The Magical West Highland Line' which the community has fallen asleep to over 1 million times!"
           img={phoneOne}
         />
-      </Box> */}
-      <Box sx={{ height: "135vh" }}>
+      </Box>
+      <Box sx={{ height: { xs: "155vh", md: "135vh" } }}>
         <Tracking />
       </Box>
-      <Footer/>
+      <Footer />
     </>
   );
 }

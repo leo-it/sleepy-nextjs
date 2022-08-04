@@ -8,9 +8,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export const Footer = () => {
   return (
-    <Box sx={{ widht: "98vw" }}>
-      <Box sx={{ display: { md: "flex" } }}>
-        <Box sx={{ ml: "10%", mr: "30%", my: "auto" }}>
+    <Box sx={{ widht: "100vw" }}>
+      <Box sx={{ display: { md: "flex" }, ml: { xs: "5%", md: 0 } }}>
+        <Box
+          sx={{ ml: { md: "10%" }, mr: "30%", my: { xs: "15px", md: "auto" } }}
+        >
           <Fade>
             <button className="btn">
               <h3> Sleepy</h3>
@@ -18,44 +20,118 @@ export const Footer = () => {
           </Fade>
         </Box>
         <Box sx={{ display: { md: "flex" } }}>
-          <Box sx={{ mr: { md: "50px" }, my: "auto", width: "150px" }}>
-            <button className="btn">
-              <h5> Privacy Policy </h5>{" "}
-            </button>
+          <Box
+            sx={{
+              mr: { md: "50px" },
+              my: { xs: "15px", md: "auto" },
+              width: "150px",
+            }}
+          >
+            <Fade>
+              {" "}
+              <button className="btn">
+                <h5> Privacy Policy </h5>{" "}
+              </button>
+            </Fade>
           </Box>
-          <Box sx={{ mr: { md: "50px" }, my: "auto" }}>
-            <button className="btn">
-              <h5>Terms</h5>
-            </button>
+          <Box sx={{ mr: { md: "50px" }, my: { xs: "15px", md: "auto" } }}>
+            <Fade>
+              {" "}
+              <button className="btn">
+                <h5>Terms</h5>
+              </button>
+            </Fade>
           </Box>
-          <Box sx={{ mr: { md: "50px" }, my: "auto", width: "150px" }}>
-            <button className="btn">
-              <h5>Contact us</h5>
-            </button>
+          <Box
+            sx={{
+              mr: { md: "50px" },
+              my: { xs: "15px", md: "auto" },
+              width: "150px",
+            }}
+          >
+            <Fade>
+              {" "}
+              <button className="btn">
+                <h5>Contact us</h5>
+              </button>
+            </Fade>
           </Box>
-          <Box sx={{ mr: { md: "50px" }, my: "auto" }}>
-            <button className="btn">
-              <h5>Careers</h5>
-            </button>
+          <Box sx={{ mr: { md: "50px" }, my: { xs: "15px", md: "auto" } }}>
+            <Fade>
+              <button className="btn">
+                <h5>Careers</h5>
+              </button>
+            </Fade>
           </Box>
         </Box>
       </Box>
-      <Box sx={{ display: { md: "flex" }, my: { md: "40px" } }}>
-        <Box sx={{ display: "flex", mr: { md: "60%" }, ml: { md: "10%" } }}>
-          <Box sx={{ width: "30px", height: "30px", mr: { md: "20px" } }}>
-            <FacebookIcon />
+      <Box
+        sx={{
+          display: { md: "flex" },
+          my: { md: "40px" },
+          ml: { xs: "5%", md: 0 },
+        }}
+      >
+        <Box sx={{ display: "flex", mr: { md: "50%" }, ml: { md: "10%" } }}>
+          <Box
+            sx={{
+              width: "30px",
+              height: "30px",
+              mr: { md: "20px" },
+              mr: { xs: "5%", md: 4 },
+            }}
+          >
+            <Fade>
+              {" "}
+              <FacebookIcon />
+            </Fade>
           </Box>
-          <Box sx={{ width: "30px", height: "30px", mr: { md: "20px" } }}>
-            <TwitterIcon />
+          <Box
+            sx={{
+              width: "30px",
+              height: "30px",
+              mr: { md: "20px" },
+              mr: { xs: "5%", md: 4 },
+            }}
+          >
+            <Fade>
+              {" "}
+              <TwitterIcon />
+            </Fade>
           </Box>
-          <Box sx={{ width: "30px", height: "30px", mr: { md: "20px" } }}>
-            <InstagramIcon />
+          <Box
+            sx={{
+              width: "30px",
+              height: "30px",
+              mr: { md: "20px" },
+              mr: { xs: "5%", md: 4 },
+            }}
+          >
+            <Fade>
+              {" "}
+              <InstagramIcon />
+            </Fade>
           </Box>
-          <Box sx={{ width: "30px", height: "30px", mr: { md: "20px" } }}>
-            <LinkedInIcon />
+          <Box
+            sx={{
+              width: "30px",
+              height: "30px",
+              mr: { md: "20px" },
+              mr: { xs: "5%", md: 0 },
+            }}
+          >
+            <Fade>
+              {" "}
+              <LinkedInIcon />
+            </Fade>
           </Box>
         </Box>
-        <Box sx={{ width: "550px" }}><h5>© 2020 Happiest Limited. </h5></Box>
+        <Box sx={{ width: { md: "550px" }, mt: { xs: "20px", md: 0 } }}>
+          <Fade>
+            {" "}
+            <h5>© 2020 Happiest Limited. </h5>
+          </Fade>
+        </Box>
       </Box>
     </Box>
   );
