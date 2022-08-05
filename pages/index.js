@@ -20,6 +20,8 @@ export default function Home() {
           content="sleepy is a page for people who do not sleep normally and provides modern and technological solutions"
           key="sleepy"
         />
+        <meta property="author" content="Leonardo" />{" "}
+        <meta property="keywords" content="sleepy, good, relax" />
       </Head>
 
       <Navbar />
