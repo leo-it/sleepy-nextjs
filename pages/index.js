@@ -1,14 +1,15 @@
-import { Box } from "@mui/material";
-import { Navbar } from "../src/components/Navbar";
 import { Albums } from "../src/modules/Albums";
 import { BedtimeStories } from "../src/modules/BedtimeStories";
 import { Benefits } from "../src/modules/Benefits";
+import { Box } from "@mui/material";
 import { DownLoadApp } from "../src/modules/DownLoadApp";
+import { Footer } from "../src/modules/Footer";
+import Head from "next/head";
+import { Navbar } from "../src/components/Navbar";
+import { Scroll } from "../src/components/scroll";
 import { Tracking } from "../src/modules/Tracking";
 import { UsersSay } from "../src/modules/UsersSay";
 import phoneOne from "../public/img/phoneOne.webp";
-import Head from "next/head";
-import { Footer } from "../src/modules/Footer";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
         <meta property="author" content="Leonardo" />{" "}
         <meta property="keywords" content="sleepy, good, relax" />
       </Head>
-
+      <Scroll />
       <Navbar />
       <DownLoadApp />
       <Benefits />

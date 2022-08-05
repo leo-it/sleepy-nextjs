@@ -6,9 +6,15 @@ body {
   scroll-behavior: smooth;
     background: var(--blue-color);
     color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
-
-
+/* #my-scrollbar {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+} */
 :root {
   --blue-color: #201360;
   --blue-dark-color: #0a064c;
