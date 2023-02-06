@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import React from "react";
 import { ButtonAppStore } from "../components/ButtonAppStore";
 import Fade from "react-reveal/Fade";
+import React from "react";
 
 export const DownLoadApp = () => {
   return (
@@ -64,7 +64,7 @@ export const DownLoadApp = () => {
             <h1>The Sleepy App</h1>
           </Fade>
 
-          <Box sx={{ width: "380px", mt: "80px", mx: "auto" }}>
+          <Box sx={{ maxWidth: "380px", mt: "80px", mx: "auto" }}>
             <h3 className="opacity--7">
               <Fade bottom>
                 Can't sleep? Try bedtime stories, sleep sounds & meditations to
